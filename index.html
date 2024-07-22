@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+  <main class="main__container">
+    <section class="contenido">
+      <article class="resultado">
+        <p class="resultado__texto resultado__texto--color">Your Result</p>
+        <div class="resultado__circle">
+          <p class="resultado__num1 white">76</p>
+          <p class="resultado__texto--color">of 100</p>
+        </div>
+        <h2 class="subtitle white">Great</h2>
+        <p class="resultado__texto2 resultado__texto--color">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </article>
+
+      <article class="detalles">
+        <h2 class="title">Summary</h2>
+        <div class="detalles__red grid">
+          <div class="detalles__flex">
+            <img src="/assets/images/icon-reaction.svg" alt="icono rayito">
+            <p class="detalles__red--text">Reaction</p>
+          </div>
+          <p><strong>80</strong> / 100</p>
+        </div>
+
+        <div class="detalles__yelow grid">
+          <div class="detalles__flex">
+            <img src="/assets/images/icon-memory.svg" alt="icono memory">
+            <p class="detalles__yellow--text">Memory</p>
+          </div>
+          <p><strong>92</strong> / 100</p>
+        </div>
+
+        <div class="detalles__green grid">
+          <div class="detalles__flex">
+            <img src="/assets/images/icon-verbal.svg" alt="icono burbujita pensativo">
+            <p class="detalles__green--text">Verbal</p>
+          </div>
+          <p><strong>61</strong> / 100</p>
+        </div>
+
+        <div class="detalles__blue grid">
+          <div class="detalles__flex">
+            <img src="/assets/images/icon-visual.svg" alt="icono ojito">
+            <p class="detalles__blue--text">Visual</p>
+          </div>
+          <p><strong>72</strong> / 100</p>
+        </div>
+        <div class="boton">Continue</div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+</body>
+
+</html>

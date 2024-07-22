@@ -1,0 +1,237 @@
+:root {
+    /* ### Primary */
+
+    --Light_red: hsl(0, 100%, 67%);
+    --Orangey_yellow: hsl(39, 100%, 56%);
+    --Green_teal: hsl(166, 100%, 37%);
+    --Cobalt_blue: hsl(234, 85%, 45%);
+
+    /* ## Gradients */
+
+    /* ## Gradients  (background) */
+    --Light_slate_blue: hsl(252, 100%, 67%);
+    --Light_royal_blue: hsl(241, 81%, 54%);
+
+    /* (circle) */
+    --Violet_blue: hsla(256, 72%, 46%, 1);
+    --Persian_blue: hsla(241, 72%, 46%, 0);
+
+    /* opacity */
+    --Light_red_opac: hsl(0, 100%, 67%, 0.1);
+    --Orangey_yellow_opac: hsl(39, 100%, 56%, 0.1);
+    --Green_teal_opac: hsl(166, 100%, 37%, 0.1);
+    --Cobalt_blue_opac: hsl(234, 85%, 45%, 0.1);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Pale_blue: hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);
+
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    ;
+}
+
+.centrar {
+    margin: 0 auto;
+}
+
+
+.main__container {
+    height: 100vh;
+    width: 100vw;
+}
+
+@media (min-width: 768px) {
+    .main__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contenido {
+    width: min(100%, 740px);
+    height: min(100%, 515px);
+}
+
+@media (min-width: 768px) {
+    section.contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ARTICLE #1 */
+.resultado {
+    background: linear-gradient(var(--Light_slate_blue), var(--Light_royal_blue));
+    width: 100%;
+    border-radius: 0 0 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 5rem;
+}
+
+@media (min-width: 768px) {
+    .resultado {
+        border-radius: 3rem;
+    }
+}
+
+.resultado__texto--color {
+    color: var(--Light_lavender);
+}
+
+.resultado__texto {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.white {
+    color: var(--White);
+}
+
+.resultado__circle {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--Violet_blue), var(--Persian_blue));
+    margin-bottom: 3rem;
+}
+
+.resultado__num1 {
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-bottom: 2.5rem;
+}
+
+.resultado__texto2 {
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* ARTICLE #2 */
+.detalles {
+    padding: 3rem;
+}
+
+.grid {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.title {
+    margin-bottom: 3rem;
+}
+
+.grid :last-of-type {
+    text-align: right;
+}
+
+.detalles__flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.detalles__red {
+    background-color: var(--Light_red_opac);
+}
+
+.detalles__red--text {
+    color: var(--Light_red);
+    font-weight: 800;
+}
+
+.detalles__yelow {
+    background-color: var(--Orangey_yellow_opac);
+}
+
+.detalles__yellow--text {
+    color: var(--Orangey_yellow);
+    font-weight: 800;
+}
+
+.detalles__green {
+    background-color: var(--Green_teal_opac);
+}
+
+.detalles__green--text {
+    color: var(--Green_teal);
+    font-weight: 800;
+}
+
+.detalles__blue {
+    background-color: var(--Cobalt_blue_opac);
+    margin-bottom: 4rem;
+}
+
+.detalles__blue--text {
+    color: var(--Cobalt_blue);
+    font-weight: 800;
+}
+.boton{
+    background-color: var(--Dark_gray_blue);
+    padding: 2rem;
+    text-align: center;
+    color: var(--White);
+    font-weight: 700;
+    border-radius: 3rem;
+}
+.boton:hover{
+    cursor: pointer;
+    background: linear-gradient(var(--Light_slate_blue), var(--Light_royal_blue));
+}
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
